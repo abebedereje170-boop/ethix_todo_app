@@ -41,7 +41,7 @@
       <div class="todo-item">
         <a href="{% url 'core:get_todo_by_id' t.id %}" class="todo-link">
           <input type="checkbox" />
-          <p class="todo-text">{{t.title}}-{{t.id}}</p>
+          <p class="todo-text">{{t.title}}</p>
         </a>
         <div class="actions">
           <a href="{% url 'core:update_todo' t.id %}" class="btn btn-edit">Update</a>

@@ -60,7 +60,7 @@ def update_todo(request, todo_id):
         todo.priority = priority
         todo.is_completed = is_completed
         todo.save()
-        return redirect('core:get_todo_by_id', todo_id=todo_id)
+        return redirect('core:index')
     return render(request, 'update.html', {'todo': todo})
 
 
